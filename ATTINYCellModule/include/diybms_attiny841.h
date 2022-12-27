@@ -14,7 +14,7 @@
 #error Incorrect value for DIYBMSMODULEVERSION
 #endif
 
-#if !(F_CPU == 2000000)
+#if !(F_CPU == 3686400)
 #error Processor speed should be 2Mhz
 #endif
 

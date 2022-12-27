@@ -192,12 +192,12 @@ uint16_t diyBMSHAL::BeginADCReading(uint8_t mode)
   // Consider ADC sleep conversion mode?
 
   /*
-#if !(F_CPU == 8000000)
+#if !(F_CPU == 7372800)
   //prescaler of 64 = 8MHz/64 = 125KHz.
   ADCSRA |= _BV(ADPS2) | _BV(ADPS1); // | _BV(ADPS0);
 #endif
 
-#if !(F_CPU == 2000000)
+#if !(F_CPU == 3686400)
 */
 
   // prescaler of 16 = 2MHz/16 = 125000.
