@@ -81,7 +81,7 @@ public:
       // CCP – Configuration Change Protection Register
       CCP = 0xD8;
       // CLKPR – Clock Prescale Register
-      CLKPR = _BV(CLKPS1);
+      CLKPR = _BV(CLKPS0);
       SREG = oldSREG;
    }
 
