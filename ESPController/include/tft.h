@@ -12,7 +12,7 @@
 #define COLOR_DEPTH 16
 #define ILI9341_DRIVER
 //#define SPI_FREQUENCY 40000000
-//#define SPI_READ_FREQUENCY 3686400
+//#define SPI_READ_FREQUENCY 20000000
 //#define SPI_TOUCH_FREQUENCY 2500000
 //#define LOAD_GLCD  // Font 1. Original Adafruit 8 pixel font needs ~1820 bytes in FLASH
 //#define LOAD_FONT2 // Font 2. Small 16 pixel high font, needs ~3534 bytes in FLASH, 96 characters
