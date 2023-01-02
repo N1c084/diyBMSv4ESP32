@@ -1136,9 +1136,9 @@ void transmit_task(void *param)
       {
         delay_ms = 450;
       }
-      else if (mysettings.baudRate == 19200)
+      else if (mysettings.baudRate == 5000)
       {
-        delay_ms = 100;
+        delay_ms = 700;
       }
 
       // Delay whilst cell module processes request
