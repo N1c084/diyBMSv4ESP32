@@ -264,7 +264,7 @@ public:
         if (GetVSPIMutex())
         {
             // Slow down to 2Mhz SPI bus
-            vspi.beginTransaction(SPISettings(2000000, MSBFIRST, SPI_MODE0));
+            vspi.beginTransaction(SPISettings(20000000, MSBFIRST, SPI_MODE0));
 
             digitalWrite(TOUCH_CHIPSELECT, LOW);
 

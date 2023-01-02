@@ -777,7 +777,7 @@ TouchScreenValues TouchScreenUpdate()
     // Y is 3130 when not touched, top of screen is 250, bottom is 3150
 
     // Slow down to 2Mhz SPI bus
-    vspi.beginTransaction(SPISettings(2000000, MSBFIRST, SPI_MODE0));
+    vspi.beginTransaction(SPISettings(20000000, MSBFIRST, SPI_MODE0));
 
     digitalWrite(TOUCH_CHIPSELECT, LOW);
 
