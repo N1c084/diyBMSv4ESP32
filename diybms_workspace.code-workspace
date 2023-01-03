@@ -4,16 +4,10 @@
 			"path": "ATTINYPIDTuning"
 		},
 		{
-			"path": "ATTINYCellModuleTestPrg"
-		},
-		{
 			"path": "ESPController"
 		},
 		{
 			"path": "ATTINYCellModule"
-		},
-		{
-			"path": "ATTINYCellModuleBlinky"
 		}
 	],
 	"settings": {
