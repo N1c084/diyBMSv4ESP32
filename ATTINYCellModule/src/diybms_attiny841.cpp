@@ -200,8 +200,8 @@ uint16_t diyBMSHAL::BeginADCReading(uint8_t mode)
 #if !(F_CPU == 3686400)
 */
 
-  // prescaler of 16 = 2MHz/16 = 125000.
-  ADCSRA |= _BV(ADPS2);
+  // prescaler of 16 = 3.68MHz/16 = 115200kHZ.
+  ADCSRA |= _BV(ADPS2) | _BV(ADPS0);
 
   //#endif
 
