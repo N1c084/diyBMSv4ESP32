@@ -1115,14 +1115,19 @@ $(function () {
 
                 $("#baudrate").empty();
                 $("#baudrate").append('<option value="2400">Standard</option>')
+                $("#baudrate").append('<option value="12000">12K</option>')
+                $("#baudrate").append('<option value="13600">13K6</option>')
                 $("#baudrate").append('<option value="19200">19K2</option>')
+                $("#baudrate").append('<option value="14400">14K4</option>')
+                $("#baudrate").append('<option value="28800">28K8</option>')
+                $("#baudrate").append('<option value="57600">57K6</option>')
                 $("#baudrate").append('<option value="9600">9K6</option>')
                 $("#baudrate").append('<option value="10000">10K</option>')
 
                 $("#baudrate").val(data.settings.baudrate);
 
                 $("#interpacketgap").empty();
-                for (let index = 2000; index < 10000; index += 500) {
+                for (let index = 250; index < 12000; index += 250) {
                     $("#interpacketgap").append('<option value="' + index + '">' + index + '</option>')
                 }
 

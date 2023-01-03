@@ -26,9 +26,9 @@ static constexpr const char *const TAG = "diybms";
 #include "esp_log.h"
 #include <Arduino.h>
 
-//#define PACKET_LOGGING_RECEIVE
-//#define PACKET_LOGGING_SEND
-//#define RULES_LOGGING
+#define PACKET_LOGGING_RECEIVE
+#define PACKET_LOGGING_SEND
+#define RULES_LOGGING
 
 #include "FS.h"
 #include "LittleFS.h"
@@ -1130,7 +1130,7 @@ void transmit_task(void *param)
 
       // Delay based on comms speed, ensure the first module has time to process and clear the request
       // before sending another packet
-      uint16_t delay_ms = 900;
+      uint16_t delay_ms = 111;
 
       if (mysettings.baudRate == 9600)
       {
